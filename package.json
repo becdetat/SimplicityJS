@@ -1,0 +1,30 @@
+{
+  "name": "SimplicityJS",
+  "version": "0.1.0",
+  "description": "Pattern matching in JavaScript",
+  "main": "dist/simplicity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendetat/SimplicityJS.git"
+  },
+  "keywords": [
+    "pattern",
+    "matching",
+    "functional",
+    "programming"
+  ],
+  "author": "Ben Scott <ben@belfryimages.com.au>",
+  "license": "Apache License Version 2.0",
+  "bugs": {
+    "url": "https://github.com/bendetat/SimplicityJS/issues"
+  },
+  "homepage": "https://github.com/bendetat/SimplicityJS",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
