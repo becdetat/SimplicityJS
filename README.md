@@ -3,7 +3,7 @@ SimplicityJS
 
 Pattern matching in JavaScript
 
-A port of [Simplicity for C#]() to JavaScript.
+A port of [Simplicity for C#](https://github.com/bendetat/Simplicity) to JavaScript.
 
 ## Installation
 
