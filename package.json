@@ -22,7 +22,7 @@
     "url": "https://github.com/bendetat/SimplicityJS/issues"
   },
   "homepage": "https://github.com/bendetat/SimplicityJS",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
     "gulp-rename": "^1.2.2"
