@@ -1,6 +1,6 @@
 {
-  "name": "SimplicityJS",
-  "version": "0.1.0",
+  "name": "simplicityjs",
+  "version": "1.0.0",
   "description": "Pattern matching in JavaScript",
   "main": "dist/simplicity.js",
   "scripts": {
