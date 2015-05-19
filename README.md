@@ -13,13 +13,11 @@ A port of [Simplicity for C#](https://github.com/bendetat/Simplicity) to JavaScr
 
 Add a reference to `./bower_components/simplicity/dist/simplicity.js`.
 
-### ~~NPM~~
+### NPM
 
-~~npm install --save-dev simplicity~~
+npm install --save-dev simplicityjs
 
-~~Add a reference to `./node_modules/SimplicityJS/dist/simplicity.js`.~~
-
-I haven't got NPM publishing yet.
+**Note that the NPM package name is `simplicityjs`, not `simplicity` (which was already taken). Add a reference to `./node_modules/simplicityjs/dist/simplicity.js`.
 
 
 ## Usage
@@ -70,4 +68,5 @@ SimplicityJS's source is in ES6, transpiled to ES5 (the widely currently support
 
 ## Versions
 
+- 1.0.0 - version bump because yay NPM publishing!
 - 0.1.0 - first version, port of Simplicity for C#
