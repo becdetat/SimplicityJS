@@ -17,7 +17,7 @@ Add a reference to `./bower_components/simplicity/dist/simplicity.js`.
 
 npm install --save-dev simplicityjs
 
-**Note that the NPM package name is `simplicityjs`, not `simplicity` (which was already taken). Add a reference to `./node_modules/simplicityjs/dist/simplicity.js`.
+**Note that the NPM package name is `simplicityjs`, not `simplicity` (which was already taken). Add a reference to `./node_modules/simplicityjs/dist/simplicity.js`.**
 
 
 ## Usage
