@@ -1,8 +1,15 @@
-window.$patternMatch = matchOn => {
+// Usage:
+// import match from 'simplicity'
+// match('a')
+// 	 .with(x => x == 'a', 'letter is A')
+//   .else(() => 'unknown letter')
+//   .do()
+
+export function match(matchOn) {
 	var self = {};
 	var cases = [];
 	var elseCase = null;
-	
+
 	self.with = (condition, result) => {
 		cases.push({
 			condition: condition,
@@ -11,7 +18,8 @@ window.$patternMatch = matchOn => {
 		return self;
 	};
 	self.else = result => {
-		elseCase = result;
+		elseCase = result || (() => result);
+
 		return self;
 	};
 	self.do = (value) => {
@@ -34,4 +42,4 @@ window.$patternMatch = matchOn => {
 	self.toFunc = () => self.do;
 
 	return self;
-};
+}
