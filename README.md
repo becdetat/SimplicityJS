@@ -7,14 +7,6 @@ A port of [Simplicity for C#](https://github.com/becdetat/Simplicity) to JavaScr
 
 ## Installation
 
-### Bower
-
-	bower install --save-dev simplicity
-
-Add a reference to `./bower_components/simplicity/dist/simplicity.js`.
-
-### NPM
-
 npm install --save-dev simplicityjs
 
 **Note that the NPM package name is `simplicityjs`, not `simplicity` (which was already taken). Add a reference to `./node_modules/simplicityjs/dist/simplicity.js`.**
@@ -63,11 +55,22 @@ Call it without a value and call `toFunc()` at the end of the method chain to ge
 2. Clone the SimplicityJS repo
 3. `npm install`
 
-SimplicityJS's source is in ES6, transpiled to ES5 (the widely currently supported version of JavaScript in browsers) using Babel via a Gulp script. To build, install Gulp globally (`npm install -g gulp`) and run `gulp` from the repo root. The default Gulp task will run Babel and write the result to `./dist/simplicity.js`.
+SimplicityJS's source is in ES6, transpiled to ES5 (the widely currently supported version of JavaScript in browsers) using Babel via a Gulp script. To build, install Gulp globally (`sudo npm install -g gulp`) and run `gulp` from the repo root. The default Gulp task will run Babel and write the result to `./dist/simplicity.js`.
+
+
+## Deploying to NPN
+
+These are instructions to myself ;-)
+
+1. `npm login`, provide creds
+2. `npm publish`
+
+that was easy
 
 
 ## Versions
 
+- 3.0.0 - Whoops, didn't actually build the dist js... Also removed support for distribution via Bower
 - 2.0.0 - use ES6 export, don't add it to `window` - breaking change
 - 1.0.0 - version bump because yay NPM publishing!
 - 0.1.0 - first version, port of Simplicity for C#

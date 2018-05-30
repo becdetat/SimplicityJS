@@ -1,6 +1,18 @@
+// Usage:
+// import match from 'simplicity'
+// match('a')
+// 	 .with(x => x == 'a', 'letter is A')
+//   .else(() => 'unknown letter')
+//   .do()
+
 'use strict';
 
-window.$patternMatch = function (matchOn) {
+Object.defineProperty(exports, '__esModule', {
+	value: true
+});
+exports.match = match;
+
+function match(matchOn) {
 	var self = {};
 	var cases = [];
 	var elseCase = null;
@@ -13,7 +25,10 @@ window.$patternMatch = function (matchOn) {
 		return self;
 	};
 	self['else'] = function (result) {
-		elseCase = result;
+		elseCase = result || function () {
+			return result;
+		};
+
 		return self;
 	};
 	self['do'] = function (value) {
@@ -34,4 +49,4 @@ window.$patternMatch = function (matchOn) {
 	};
 
 	return self;
-};
+}
