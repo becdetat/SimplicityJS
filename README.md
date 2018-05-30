@@ -3,7 +3,7 @@ SimplicityJS
 
 Pattern matching in JavaScript
 
-A port of [Simplicity for C#](https://github.com/bendetat/Simplicity) to JavaScript.
+A port of [Simplicity for C#](https://github.com/becdetat/Simplicity) to JavaScript.
 
 ## Installation
 
@@ -24,12 +24,12 @@ npm install --save-dev simplicityjs
 
 These examples are in ES6.
 
-A function called `$patternMatch` is added to `window` and is the entry point to Simplicity. Call it with a value to perform the match on:
+        import match from 'simplicity
 
 	var letter = 'f';
-	var result = $patternMatch(letter)
-		.with(x => 'a', 'Letter is A')
-		.with(x => 'b', 'Letter is B')
+	var result = match(letter)
+		.with('a', 'Letter is A')
+		.with('b', 'Letter is B')
 		.with(x => 'c' <= x && x <= 'h', x => 'Letter ' + x + ' is between c and h')
 		.else(x => 'Letter ' + x + ' is out of range')
 		.do();
@@ -38,7 +38,7 @@ A function called `$patternMatch` is added to `window` and is the entry point to
 
 Call it without a value and call `toFunc()` at the end of the method chain to get a function value that can be reused:
 
-	var formatFuzzyAmount = $patternMatch()
+	var formatFuzzyAmount = match()
 		.with(0, 'None')
 		.with(x => 0 < x && x <= 0.125, 'Just a bit')
 		.with(x => 0.125 < x && x <= 0.29, 'About one quarter')
@@ -68,5 +68,6 @@ SimplicityJS's source is in ES6, transpiled to ES5 (the widely currently support
 
 ## Versions
 
+- 2.0.0 - use ES6 export, don't add it to `window` - breaking change
 - 1.0.0 - version bump because yay NPM publishing!
 - 0.1.0 - first version, port of Simplicity for C#
