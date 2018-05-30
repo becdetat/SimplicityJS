@@ -70,6 +70,7 @@ that was easy
 
 ## Versions
 
+- 3.0.1 - *sigh* need to `export default` not just `export`. if only _someone_ had written a test suite for this library.
 - 3.0.0 - Whoops, didn't actually build the dist js... Also removed support for distribution via Bower
 - 2.0.0 - use ES6 export, don't add it to `window` - breaking change
 - 1.0.0 - version bump because yay NPM publishing!

@@ -5,7 +5,7 @@
 //   .else(() => 'unknown letter')
 //   .do()
 
-export function match(matchOn) {
+export default function match(matchOn) {
 	var self = {};
 	var cases = [];
 	var elseCase = null;
