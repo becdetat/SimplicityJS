@@ -24,7 +24,7 @@ npm install --save-dev simplicityjs
 
 These examples are in ES6.
 
-        import match from 'simplicity
+	import match from 'simplicityjs'
 
 	var letter = 'f';
 	var result = match(letter)
