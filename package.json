@@ -1,6 +1,6 @@
 {
   "name": "simplicityjs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Pattern matching in JavaScript",
   "main": "dist/simplicity.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "functional",
     "programming"
   ],
-  "author": "Ben Scott <ben@belfryimages.com.au>",
+  "author": "Rebecca Scott <bec@belfryimages.com.au>",
   "license": "Apache License Version 2.0",
   "bugs": {
     "url": "https://github.com/bendetat/SimplicityJS/issues"
