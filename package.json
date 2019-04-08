@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bendetat/SimplicityJS.git"
+    "url": "https://github.com/becdetat/SimplicityJS.git"
   },
   "keywords": [
     "pattern",
@@ -19,9 +19,9 @@
   "author": "Rebecca Scott <bec@belfryimages.com.au>",
   "license": "Apache License Version 2.0",
   "bugs": {
-    "url": "https://github.com/bendetat/SimplicityJS/issues"
+    "url": "https://github.com/becdetat/SimplicityJS/issues"
   },
-  "homepage": "https://github.com/bendetat/SimplicityJS",
+  "homepage": "https://github.com/becdetat/SimplicityJS",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
